@@ -78,12 +78,27 @@ display: block;
   padding: 0.5rem 0;
   display: block;
 }
-.watchimage,
-.penimage,
-.glassesimage{
+.watchimagediv,
+.penimagediv,
+.glassesimagediv{
   height: 9rem;
-  max-width: 70%;
   padding: 2rem;
+}
+.watchimage{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.penimage{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+.glassesimage{
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
 }
 
 
