@@ -1,10 +1,23 @@
 html{
   font-size: 18px;
 }
+
+.header,
+.mainimage,
+.nav,
+.gallery,
+.timeandplace,
+.footer{
+  display: flex;
+  justify-content: center;
+}
+
 .sitecontainer{
   width:960px;
   margin: 0 auto;
+  flex-shrink: 2;
 }
+
 .header{
   background-color: black;
   color: white;
@@ -138,7 +151,7 @@ display: block;
   display: block;
 }
 
-
+/* tablet responsivness */
 @media only screen and (max-width: 1024px){
 
 .productglasses{
@@ -147,7 +160,14 @@ display: block;
 .product{
   width: 47%;
 }
-
+.gallerycontainer{
+  display: flex;
+justify-content: space-around;
+}
+.locationcontainer{
+  display: flex;
+  justify-content: space-around;
+}
 .navspan{
   display: none;
 }
@@ -157,10 +177,67 @@ display: block;
 .navcontainer{
   justify-content: center;
 }
+}
 
+/* phone responsivness */
+@media only screen and (max-width: 470px){
 
+  .mainimage{
+    height: 15rem;
+  }
+  .announcement{
+  margin-top: 10rem;
+  width: 100%;
+  padding: 1rem 2rem;
+  }
+  .newarrival{
+    font-size: 0.77rem;
+  }
+  .bikes{
+    font-size: 1rem;
+    margin-top: 0.25rem;
+  }
 
+.productwatch{
+  display: none;
+}
 
+.product{
+  width: 90%;
+}
+.gallerycontainer{
+  display: flex;
+justify-content: center;
+}
+
+.locationcontainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.location{
+  margin-bottom: 0.5rem;
+}
+.location,
+.time{
+  width: 90%;
+}
+
+.title{
+  display: none;
+}
+.headercontainer{
+  display: flex;
+  justify-content: center;
+}
+
+.copy{
+  color: white;
+  text-align: center;
+  padding-top: 2rem;
+  display: block;
+}
 
 
 
